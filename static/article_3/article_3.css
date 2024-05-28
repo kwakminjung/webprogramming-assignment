@@ -1,0 +1,73 @@
+* {
+    margin: 20px;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+/* header */
+.header {
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    position: fixed;
+
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    padding: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header li {
+    float: left;
+}
+
+.language {
+    display: flex;
+}
+
+/* discription section */
+#article_intro {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#article_title {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+#article_info {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+#plan .tg  {border-collapse:collapse;border-spacing:0;font-size: 30px;}
+#plan .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;
+    overflow:hidden;padding:10px 5px;word-break:normal;}
+#plan .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;
+    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+#plan .tg .tg-4xsm{background-color:#cbcefb;border-color:#333333;color:#333333;text-align:left;vertical-align:top}
+#plan .tg .tg-ncd7{background-color:#ffffc7;border-color:inherit;text-align:left;vertical-align:top}
+#plan .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}

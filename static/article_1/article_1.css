@@ -1,0 +1,210 @@
+* {
+    margin: 20px;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+/* header */
+.header {
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    position: fixed;
+
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    padding: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header li {
+    float: left;
+}
+
+.language {
+    display: flex;
+}
+
+/* discription section */
+#article_intro {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#article_title {
+    font-size: 100px;
+    font-weight: bolder;
+
+    width: 80%;
+}
+
+#article_info {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+/* index nav */
+#index_nav {
+    width: 20%;
+    float: left;
+    position: fixed;
+}
+
+.nav_content:hover {
+    cursor: pointer;
+    color: lightgray;
+}
+
+/* top image */
+#goTop {
+    bottom: 5px;
+    right: 5px;
+    z-index: -1;
+    position: fixed;
+}
+
+#goTop:hover {
+    opacity: 0.6;
+}
+
+#goTop img {
+    width: 40px;
+}
+
+/* content section */
+#article_content {
+    margin-left: 20%;
+    width: 75%;
+    float: left;
+    overflow-wrap: break-word;
+}
+
+.subheading {
+    scroll-margin-top: 100px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 100px;
+}
+
+.subcontent {
+    font-size: 20px;
+}
+
+#subcontent_1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#sub_c {
+    font-size: 20px;
+}
+
+/* content section - sub_3 */
+#sub_3_info {
+    text-align: center;
+    color: rgb(144, 144, 144);
+}
+
+#sub_3_ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub_3_li {
+    color: black;
+    border: 1px solid gray;
+    background-color: lightblue;
+}
+
+.sub_3_li:hover {
+    cursor: pointer;
+    color: black;
+    border: 1px solid gray;
+    background-color: lightblue;
+}
+
+/* footer */
+footer {
+    margin-top: 2500px;
+}
+
+#snsIcon {
+    float: right;
+}
+
+#sns {
+    list-style: none;
+    display: flex;
+}
+
+.SNSLink:hover {
+    opacity: 0.6;
+}
+
+#sns .footIcon img {
+    width: 40px;
+}
+
+.project_ul {
+    list-style-type: none; /* 리스트 스타일 제거 */
+    padding: 0; /* 패딩 제거 */
+    margin: 0; /* 마진 제거 */
+}
+
+.project_li {
+    display: flex; /* Flexbox 사용 */
+    flex-direction: column; /* 수직 정렬 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+    margin-bottom: 20px; /* 항목 사이의 간격 */
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    display: block;
+    margin: 10px 0;
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+/* 팀 프로젝트 이미지를 수평 정렬 */
+.team_project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 이미지가 한 줄에 다 안 들어갈 경우 다음 줄로 넘어가게 함 */
+}
+
+.team_project img {
+    margin: 10px;
+}

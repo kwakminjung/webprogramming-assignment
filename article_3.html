@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Plan</title>
+    <link rel="stylesheet" href="./static/article_3/article_3.css">
+    <script>
+        var canvas, context;
+        function init(){
+            canvas = document.getElementById("myCanvas");
+            context = canvas.getContext("2d");
+            context.lineWidth = 2;
+            context.strokeStyle = "blue";
+            
+            drawFace();
+        }
+
+        function drawFace() {
+            context.beginPath();
+            context.arc(250, 250, 200, 0, 2 * Math.PI);
+            context.stroke();
+
+            context.beginPath();
+            context.arc(170, 170, 50, 0, 2 * Math.PI);
+            context.stroke();
+
+            context.beginPath();
+            context.arc(330, 170, 50, 0, 2 * Math.PI);
+            context.stroke();
+
+            context.beginPath();
+            context.arc(250, 300, 100, 0, Math.PI, false);
+            context.stroke();
+        }
+    </script>
+</head>
+<body onload="init()">
+    <header class="header">
+        <div id="intro_title"><a href="intro.html">Kwakminjung</a></div>
+        <nav>
+            <ul>
+                <li>
+                    <div>
+                        <a href="article_1.html">
+                            <span>자기 소개</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="article_2.html">
+                            <span>관심 기술/기업</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="article_3.html">
+                            <span>Future Plan</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="article_intro">
+        <div id="article_title">Future Plan</div>
+        <div id="article_info">
+            미래 계획을 서술합니다.
+        </div>
+
+        
+    </section>
+
+    <div>
+        <canvas id="myCanvas" style="background-color: aliceblue;" width="500" height="500"></canvas>
+        <div id="plan">
+            <table class="tg"><thead>
+                <tr>
+                  <th class="tg-4xsm" rowspan="3">2024</th>
+                  <th class="tg-ncd7">하계방학</th>
+                  <th class="tg-0pky">
+                    <ul>
+                        <li>spring boot 공부와 실전 활용 (게시판 웹 사이트 만들기)</li>
+                        <li>토익 공부 (목표점수: 700점 이상)</li>
+                        <li>운전면허증 취득 (2종 보통)</li>
+                        <li>네트워크 지식(HTTP, TCP/UDP, 라우팅, NAT, OSI 7계층 등) 공부 및 블로그 정리</li>
+                    </ul>
+                  </th>
+                </tr>
+                <tr>
+                  <th class="tg-ncd7">2학기</th>
+                  <th class="tg-0pky">
+                    <ul>
+                        <li>21학점 수강</li>
+                        <li>창업동아리 프로젝트 개발</li>
+                    </ul>
+                  </th>
+                </tr>
+                <tr>
+                  <th class="tg-ncd7">동계방학</th>
+                  <th class="tg-0pky">
+                    <ul>
+                        <li>2025 정보처리기사 공부</li>
+                        <li>인턴십</li>
+                        <li>프로젝트 정리</li>
+                        <li>코딩테스트 공부</li>
+                        <li>하계 방학의 spring boot 프로젝트 고도화 (빌드, 테스트, 배포 자동화)</li>
+                    </ul>
+                  </th>
+                </tr></thead>
+              <tbody>
+                <tr>
+                  <td class="tg-4xsm" rowspan="4">2025</td>
+                  <td class="tg-ncd7">1학기</td>
+                  <td class="tg-0pky">
+                    <ul>
+                        <li>9학점 수강</li>
+                        <li>spring 공부</li>
+                        <li>코딩테스트 공부</li>
+                        <li>부트캠프 신청</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-ncd7">하계방학</td>
+                  <td class="tg-0pky">
+                    <ul>
+                        <li>부트캠프 참여</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-ncd7">2학기</td>
+                  <td class="tg-0pky">
+                    <ul>
+                        <li>3학점 수강 및 졸업요건 완수</li>
+                        <li>부트캠프 참여</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-ncd7">동계방학</td>
+                  <td class="tg-0pky">
+                    <ul>
+                        <li>취직</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+</html>
